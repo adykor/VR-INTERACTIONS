@@ -1550,17 +1550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2116a7e9f4e5a2c4fbb651d91a1fb602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchedColor:
-    r: 0.69466573
-    g: 0.8867924
-    b: 0.058561746
-    a: 1
-  initialColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  rigidBody: {fileID: 0}
+  touchedColor: {r: 0.69466573, g: 0.8867924, b: 0.058561746, a: 1}
+  initialColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1472779824
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,6 +2052,7 @@ GameObject:
   - component: {fileID: 1566075464}
   - component: {fileID: 1566075463}
   - component: {fileID: 1566075467}
+  - component: {fileID: 1566075468}
   m_Layer: 0
   m_Name: LeverTop
   m_TagString: Untagged
@@ -2172,6 +2164,21 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &1566075468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566075461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548083fc7dc1a364f8723dc86ba589ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchedColor: {r: 0.69466573, g: 0.8867924, b: 0.058561746, a: 1}
+  initialColor: {r: 0, g: 0, b: 0, a: 0}
+  springForce: 100
 --- !u!1 &1775212077
 GameObject:
   m_ObjectHideFlags: 0

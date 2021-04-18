@@ -2,17 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Draggable : MonoBehaviour
+public class Draggable : Grabbable
 {
-    // Start is called before the first frame update
-    void Start()
+    public float springForce = 1f;
+
+    private SpringJoint joint;
+    
+    public override void OnGrab(Grabber grabber)
     {
-        
+        // Add a spring joint between this object's rigid body and the grabber's rigid body
+        joint = gameObject.AddComponent<SpringJoint>();
+        joint.spring = springForce;
+        joint.connectedBody = grabber.GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnDrop()
     {
-        
+        // Remove the spring joint
+        Destroy(joint);
     }
 }
