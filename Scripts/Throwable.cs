@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Throwable : Grabable
+public class Throwable : Grabbable
 {
     public int numVelocitySamples = 10;
     public float throwBoost = 1f;

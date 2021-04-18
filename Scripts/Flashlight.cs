@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flashlight : Grabable
+public class Flashlight : Grabbable
 {
     public Light light;
 

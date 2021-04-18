@@ -1550,8 +1550,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2116a7e9f4e5a2c4fbb651d91a1fb602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchedColor: {r: 0.69466573, g: 0.8867924, b: 0.058561746, a: 1}
-  initialColor: {r: 0, g: 0, b: 0, a: 0}
+  touchedColor:
+    r: 0.69466573
+    g: 0.8867924
+    b: 0.058561746
+    a: 1
+  initialColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
+  rigidBody: {fileID: 0}
 --- !u!1 &1472779824
 GameObject:
   m_ObjectHideFlags: 0

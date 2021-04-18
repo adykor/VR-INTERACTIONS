@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grabable : MonoBehaviour
+public class Grabbable : MonoBehaviour
 {
     public Color touchedColor;
     public Color initialColor;

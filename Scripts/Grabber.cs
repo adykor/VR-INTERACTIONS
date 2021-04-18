@@ -8,8 +8,8 @@ public class Grabber : MonoBehaviour
     public string gripInputName;
     public string triggerInputName;
 
-    private Grabable touchedObject;
-    private Grabable grabbedObject;
+    private Grabbable touchedObject;
+    private Grabbable grabbedObject;
 
     void Update()
     {
@@ -70,7 +70,7 @@ public class Grabber : MonoBehaviour
         }
     }
 
-    private Grabable OnGrab(Grabber grabber)
+    private Grabbable OnGrab(Grabber grabber)
     {
         throw new NotImplementedException();
     }
@@ -79,7 +79,7 @@ public class Grabber : MonoBehaviour
     {
         // Can make decisions based on just the presence of a component ***
         // Check if the object we touched is a grabable object
-        Grabable grabable = other.GetComponent<Grabable>();
+        Grabbable grabable = other.GetComponent<Grabbable>();
         if (grabable != null)
         {
             // Let the object know it was touched
@@ -93,7 +93,7 @@ public class Grabber : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // Check if the object we stopped touching is a grabable object
-        Grabable grabable = other.GetComponent<Grabable>();
+        Grabbable grabable = other.GetComponent<Grabbable>();
         if (grabable != null)
         {
             // Let the object know it is no longer being touched
