@@ -740,7 +740,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &265123655
 BoxCollider:
@@ -810,11 +810,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265123653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.131, y: 3.357, z: -11.747}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_Children:
-  - {fileID: 1472779825}
-  - {fileID: 1566075462}
+  m_LocalPosition: {x: 0.131, y: 3.4161, z: -11.747}
+  m_LocalScale: {x: 0.2, y: 0.06170346, z: 0.2}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1567,6 +1565,7 @@ GameObject:
   - component: {fileID: 1472779828}
   - component: {fileID: 1472779827}
   - component: {fileID: 1472779826}
+  - component: {fileID: 1472779830}
   m_Layer: 0
   m_Name: LeverHandle
   m_TagString: Untagged
@@ -1581,12 +1580,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472779824}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.99, z: -0.085}
-  m_LocalScale: {x: 0.25272632, y: 0.5126043, z: 0.137858}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.133, y: 3.516, z: -11.764}
+  m_LocalScale: {x: 0.050545264, y: 0.10252086, z: 0.03697903}
   m_Children: []
-  m_Father: {fileID: 265123658}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1472779826
 Rigidbody:
@@ -1602,7 +1601,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 96
   m_CollisionDetection: 0
 --- !u!136 &1472779827
 CapsuleCollider:
@@ -1665,6 +1664,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472779824}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!59 &1472779830
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472779824}
+  m_ConnectedBody: {fileID: 265123654}
+  m_Anchor: {x: 0, y: -0.95, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0.01000002, y: 0.0406023, z: -0.08500099}
+  m_UseSpring: 1
+  m_Spring:
+    spring: 1
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 0
+  m_Limits:
+    min: 0
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1001 &1524894857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2018,7 +2052,7 @@ GameObject:
   - component: {fileID: 1566075464}
   - component: {fileID: 1566075463}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: LeverTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2032,11 +2066,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566075461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.016, y: 1.58, z: -0.09}
-  m_LocalScale: {x: 0.51004, y: 0.51004, z: 0.51004}
+  m_LocalPosition: {x: 0.13419999, y: 3.638, z: -11.764999}
+  m_LocalScale: {x: 0.07344576, y: 0.07344576, z: 0.07344576}
   m_Children: []
-  m_Father: {fileID: 265123658}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1566075463
 Rigidbody:
