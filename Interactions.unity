@@ -1582,7 +1582,7 @@ Transform:
   m_GameObject: {fileID: 1472779824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.133, y: 3.516, z: -11.764}
-  m_LocalScale: {x: 0.050545264, y: 0.10252086, z: 0.03697903}
+  m_LocalScale: {x: 0.041808516, y: 0.10252086, z: 0.03697903}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -1686,10 +1686,10 @@ HingeJoint:
     targetVelocity: 0
     force: 0
     freeSpin: 0
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_Limits:
-    min: 0
-    max: 0
+    min: -60
+    max: 60
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -2051,6 +2051,7 @@ GameObject:
   - component: {fileID: 1566075465}
   - component: {fileID: 1566075464}
   - component: {fileID: 1566075463}
+  - component: {fileID: 1566075467}
   m_Layer: 0
   m_Name: LeverTop
   m_TagString: Untagged
@@ -2066,8 +2067,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566075461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.13419999, y: 3.638, z: -11.764999}
-  m_LocalScale: {x: 0.07344576, y: 0.07344576, z: 0.07344576}
+  m_LocalPosition: {x: 0.13419999, y: 3.6493, z: -11.764999}
+  m_LocalScale: {x: 0.08366941, y: 0.08366941, z: 0.08366941}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -2148,6 +2149,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566075461}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!138 &1566075467
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566075461}
+  m_ConnectedBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &1775212077
 GameObject:
   m_ObjectHideFlags: 0
