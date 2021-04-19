@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Draggable : Grabbable
 {
-    public float springForce = 1f;
+    public float springForce = 100f;
+    public float dampingForce = 1f;
 
     private SpringJoint joint;
     
@@ -13,6 +14,7 @@ public class Draggable : Grabbable
         // Add a spring joint between this object's rigid body and the grabber's rigid body
         joint = gameObject.AddComponent<SpringJoint>();
         joint.spring = springForce;
+        joint.damper = dampingForce;
         joint.connectedBody = grabber.GetComponent<Rigidbody>();
     }
 
