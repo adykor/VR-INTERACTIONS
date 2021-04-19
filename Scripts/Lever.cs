@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Lever : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class Lever : MonoBehaviour
     public float offAngleThreshold;
     private bool pushedForward;
     private bool pulledBackward;
+
+    public UnityEvent turnedOn;
+    public UnityEvent turnedOff;
 
     private void Start()
     {
@@ -22,7 +26,9 @@ public class Lever : MonoBehaviour
         if (hinge.angle > onAngleThreshold && !pushedForward)
         {
             pushedForward = true;
-            // Do something
+
+            // Trigger the turned on event
+            turnedOn.Invoke();
 
         }
         // If the lever was pushed forward and isn't anymore
@@ -36,7 +42,8 @@ public class Lever : MonoBehaviour
         {
             pulledBackward = true;
 
-            // Do something
+            // Trigger the turned off event
+            turnedOff.Invoke();
 
         }
         // If the lever was pulled backward and isn't anymore
